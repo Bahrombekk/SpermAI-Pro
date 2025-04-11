@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .report-container {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            color: #000080;
+            margin-bottom: 20px;
+        }
+        .clinic-info {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .patient-info {
+            margin-bottom: 30px;
+        }
+        .patient-info table {
+            width: 100%;
+        }
+        .patient-info td:first-child {
+            color: #000080;
+            width: 200px;
+            padding: 5px 0;
+        }
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .results-table th {
+            background-color: #000080;
+            color: white;
+            padding: 10px;
+        }
+        .results-table td {
+            padding: 10px;
+            border: 1px solid #000080;
+            text-align: center;
+            background-color: #F8F8FF;
+        }
+        .chart-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .chart {
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+        }
+        .conclusion {
+            margin: 30px 0;
+        }
+        .signature {
+            margin-top: 50px;
+        }
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h2 {
+            color: #000080;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <div class="header">
+            <h1>«SPERM-AI» TIBBIY MARKAZI</h1>
+        </div>
+        
+        <div class="clinic-info">
+            <p>Manzil: Toshkent sh., Chilonzor tumani</p>
+            <p>Tel: +998 99 123-45-67</p>
+            <p>Litsenziya: №12345</p>
+        </div>
+
+        <div class="header">
+            <h2>SPERMOGRAMMA TAHLILI</h2>
+        </div>
+
+        <div class="patient-info">
+            <table>
+                <tr>
+                    <td>Bemor F.I.SH:</td>
+                    <td>Teshaboyev Teshavoy Teshavoyevich</td>
+                </tr>
+                <tr>
+                    <td>Tug'ilgan sanasi:</td>
+                    <td>01.01.1990</td>
+                </tr>
+                <tr>
+                    <td>Tahlil sanasi:</td>
+                    <td>19.10.2024</td>
+                </tr>
+                <tr>
+                    <td>Tahlil vaqti:</td>
+                    <td>10:30</td>
+                </tr>
+                <tr>
+                    <td>ID raqami:</td>
+                    <td>SP-2024/123</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>TAHLIL NATIJALARI</h3>
+        <table class="results-table">
+            <tr>
+                <th>Ko'rsatkich</th>
+                <th>Soni</th>
+                <th>Foiz</th>
+                <th>Me'yor</th>
+            </tr>
+            <tr>
+                <td>Trik spermatozoidlar</td>
+                <td>500</td>
+                <td>50%</td>
+                <td>≥ 58%</td>
+            </tr>
+            <tr>
+                <td>O'lik spermatozoidlar</td>
+                <td>0</td>
+                <td>0%</td>
+                <td>≤ 42%</td>
+            </tr>
+            <tr>
+                <td>Yetilmagan spermatozoidlar</td>
+                <td>500</td>
+                <td>50%</td>
+                <td>≤ 20%</td>
+            </tr>
+            <tr>
+                <td>Umumiy soni:</td>
+                <td>1000</td>
+                <td>100%</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h3>VIZUAL TAHLIL</h3>
+        <div class="chart-container">
+            <div class="chart">
+                <img src="/api/placeholder/400/300" alt="Vizual tahlil diagrammasi">
+            </div>
+        </div>
+
+        <div class="conclusion">
+            <h3>XULOSA:</h3>
+            <p>Trik spermatozoidlar miqdori me'yordan biroz past.</p>
+        </div>
+
+        <div class="signature">
+            <table>
+                <tr>
+                    <td>Shifokor:</td>
+                    <td>__________________</td>
+                    <td width="50"></td>
+                    <td>Imzo:</td>
+                    <td>__________________</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>Hisobot yaratilgan vaqt: 19.10.2024 10:30</p>
+        </div>
+    </div>
+</body>
+</html>
